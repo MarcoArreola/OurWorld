@@ -1,0 +1,722 @@
+.main{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 6 / 3; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assets/Images/Andreita/Marco.jpeg");
+}
+
+.div2 { 
+    grid-area: 1 / 3 / 6 / 4; 
+    position: relative;
+}
+
+p{
+    text-align: justify;
+}
+
+
+@media (min-width: 360px) and (max-height: 741px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 20%;
+        position: relative;
+        }
+        
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 200px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    p{ 
+        font-size:10.7px;
+    }
+    
+    strong{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 375px) and (max-height: 845px){
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 17%;
+        position: relative;
+        }
+        
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 200px;
+
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:10.5px;
+    }
+    
+    strong{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 390px) and (max-height: 845px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 17%;
+        position: relative;
+    }
+        
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 220px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        
+        font-size:12.7px;
+    }
+    
+    strong{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 412px) and (max-height: 916px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 17%;
+        position: relative;
+        }
+        
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 250px;
+    }
+
+    .div2 { 
+        grid-area: 5 / 1 / 6 / 3; 
+        position: absolute;
+        left: 2%;
+        padding-right: 5%;
+    }
+
+    p{
+        
+        font-size:13.7px;
+    }
+    
+    strong{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 430px) and (max-height: 932px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 17%;
+        position: relative;
+    }
+
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 250px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:14px;
+    }
+    
+    strong{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 540px) and (max-height: 720px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 17%;
+        position: relative;
+    }
+
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 212px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:11.8px;
+    }
+    
+    strong{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-height: 1025px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 300px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:19.2px;
+    }
+    
+    strong{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 820px) and (max-height: 1181px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 400px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:20.8px;
+    }
+    
+    strong{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 912px) and (max-height: 1368px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 12%;
+        position: relative;
+    }
+
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 400px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:25.5px;
+    }
+    
+    strong{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 950px) and (max-height: 1000px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 350px;
+        position: relative; 
+        margin-top: 12%;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    
+    .div1{
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/Images/Andreita/Marco.jpeg"); 
+    }
+
+    .div2{
+        grid-area: 1 / 2 / 2 / 3;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        padding-left: 0;
+        right: 5%;
+        text-align: justify;
+    }
+
+    p{
+        font-size: 11px;
+       color: black;
+    }
+
+    strong{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1150px) and (max-height: 640px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 350px;
+        position: relative; 
+        margin-top: 12%;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    
+    .div1{
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/Images/Andreita/Marco.jpeg"); 
+    }
+
+    .div2{
+        grid-area: 1 / 2 / 2 / 3;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        padding-left: 0;
+        right: 5%;
+        text-align: justify;
+    }
+
+    p{
+        font-size: 11px;
+       color: black;
+    }
+
+    strong{
+        font-size: 23px;
+    }
+}
+
+@media (min-width: 1024px) and (min-height: 1360px){
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin-top: 12%;
+        position: relative;
+    }
+
+    .div1 { 
+        grid-area: 1 / 1 / 5 / 3; 
+        height: 400px;
+    }
+
+    .div2 { 
+        position: absolute;
+        grid-area: 5 / 1 / 6 / 3; 
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+    }
+
+    p{
+        font-size:25px;
+    }
+    
+    strong{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 1079px) and (min-height: 719px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 500px;
+        position: relative; 
+        margin-top: 12%;
+        padding-left: 5%;
+        padding-right: 2%;
+    }
+    
+    .div1{
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/Images/Andreita/Marco.jpeg"); 
+    }
+
+    .div2{
+        grid-area: 1 / 2 / 2 / 3;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 10%;
+        text-align: justify;
+    }
+
+    p{
+        font-size: 15px;
+       color: black;
+    }
+
+    strong{
+        font-size: 35px;
+    }
+}
+
+
+
+@media (min-width: 1440px) and (max-height: 791px){
+    .parent {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 550px;
+        position: relative; 
+        margin-top: 10%;
+    }
+    
+    .div1{
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 2;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("/assets/Images/Andreita/Marco.jpeg"); 
+    }
+
+    .div2{
+        grid-area: 1 / 2 / 2 / 3;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 10%;
+        text-align: justify;
+    }
+
+    p{
+        font-size: 17.3px;
+       color: black;
+    }
+
+    strong{
+        font-size: 35px;
+    }
+
+}
+
+@media (min-width: 1600px) {
+.parent {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 550px;
+    position: relative; 
+    margin-top: 10%;
+    
+}
+
+.div1{
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/assets/Images/Andreita/Marco.jpeg"); 
+}
+
+.div2{
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    padding-right: 15%;
+
+}
+
+p{
+    font-size: 19px;
+    color: black
+}
+
+strong{
+    font-size: 35px;
+}
+}
+
+@media (min-width: 1700px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 73%;
+    margin-top: 9%;
+}
+
+p{
+    font-size: 19px;
+    color: black;
+}
+
+strong{
+    font-size: 44px;
+}
+}
+
+@media (min-width: 1900px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 73%;
+    margin-top: 9%;
+}
+
+
+
+p{
+    font-size: 21px;
+}
+
+strong{
+    font-size: 47px;
+}
+}
+
+@media (min-width: 2100px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 75%;
+    margin-top: 8.5%;
+}
+
+
+
+p{
+    font-size: 24px;
+}
+
+strong{
+    font-size: 52px;
+}
+}
+
+@media (min-width: 2300px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 78%;
+    margin-top: 7%;
+}
+
+
+
+p{
+    font-size: 15px;
+}
+
+strong{
+    font-size: 70px;
+}
+}
+
+@media (min-width: 2800px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 7%; 
+    height: 73%;
+}
+
+p{
+    font-size: 32px;
+}
+
+strong{
+    font-size: 71px;
+}
+}
+
+@media (min-width: 3200px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 73%;
+    margin-top: 7%; 
+}
+
+
+p{
+    font-size: 49px;
+}
+
+strong{
+    font-size: 108px;
+}
+}
+
+@media (min-width: 4500px) {
+.parent {
+    margin-top: 10%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 73%;
+    margin-top: 7%; 
+}
+
+p{
+    font-size: 65.3px;
+}
+
+strong{
+    font-size: 144px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

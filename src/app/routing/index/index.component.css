@@ -1,0 +1,42 @@
+.dad{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 7%;
+}
+
+.son{
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    align-self: center;
+}
+
+@media (max-width: 430px) {
+    .dad {
+        flex-direction: column;
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 390px) {
+    .dad {
+        flex-direction: column;
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 375px) {
+    .dad {
+        flex-direction: column;
+        margin-top: 2%;
+    }
+
+    .son{
+        width: 180px;
+    }
+}

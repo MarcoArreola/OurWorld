@@ -1,0 +1,28 @@
+.main{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: red;
+}
+
+.tamanio{
+    height: 500px
+}
+
+#carouselExampleCaptions{
+    position: relative;
+    padding-top: 12.5%;
+}
+
+.Text{
+    position: absolute;
+    text-align: justify;
+}
+
+
+p{
+    color: black;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

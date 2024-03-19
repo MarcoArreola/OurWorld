@@ -1,0 +1,95 @@
+<div class="main"> 
+    <app-header></app-header>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 1" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3" (click)="verImagenActiva()"></button>
+
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 5" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 6" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 7" (click)="verImagenActiva()"></button>
+
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 8" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 9" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 10" (click)="verImagenActiva()"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 11" (click)="verImagenActiva()"></button>
+
+
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/Images/Andreita/Posada.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/PistaHielo.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Cine.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Acuario.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/MachadoFlores.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Cargada.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Levantado.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Triste.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Acaxee.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/14Feb.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Cartas.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/Images/Andreita/Novios.jpeg" class="d-block w-100 tamanio" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" (click)="verImagenActiva()">
+          <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" (click)="verImagenActiva()">
+          <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+    <div class="Text">
+        
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Posada.jpeg'">Nuestro Mundo comenzó un 12 de diciembre del 2023, en un salón de clases, sin embargo, el primer síntoma de nuestro enamoramiento fue una sensación de atracción, acompañada de coqueteo indirecto, en una posada de un amigo en común. <br><br> Este día fue especial, debido a que, a pesar de que estaba muy enfermo de la garganta, sentí una gran aceptación de su parte y ninguna incomodidad.</p>
+        <p *ngIf="activeDiv == undefined">Nuestro Mundo comenzó un 12 de diciembre del 2023, en un salón de clases, sin embargo, el primer síntoma de nuestro enamoramiento fue una sensación de atracción, acompañada de coqueteo indirecto, en una posada de un amigo en común. <br><br> Este día fue especial, debido a que, a pesar de que estaba muy enfermo de la garganta, sentí una gran aceptación de su parte y ninguna incomodidad.</p>
+        
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/PistaHielo.jpeg' ">Nuestra primer cita oficial fue en la pista de hielo navideña. A lo largo de día, confieso que estuve realmente muy nervioso, antes y durante la cita. <br><br> Por segunda ocasión, me di cuenta de la linda persona que es Andrea, tan sencilla, siempre transmitiendo serenidad y tranquilidad. <br><br> Este día, nuevamente mi garganta me volvió a fallar progresivamente y de manera natural hice un comentario propio de alguien codo, Andrea solo rió.</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Cine.jpeg' ">Después de algunas citas, en esta ocasión, mi atracción e interés hacía Andreita era inevitable, tanto asi que confieso que, aunque estaba presente físicamente, con mi vista enfocada en la pantalla, mi mente estaba en un total dileman constantemente, atreverme a tomar su mano o no hacerlo para no causar una incomodidad, no era posible concentrarme al 100%, a final de cuentas, como que hice un intento indirecto de hacerlo. </p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Acuario.jpeg' ">El tiempo pasaba y pasaba, y mientras más sucedia, más me daba cuenta que estaba enamorandome de Andrea, cómo no sentirme privilegiado de pasar una tarde linda, llena de cultura, de vida marina, con aquella niña hermosa, vestida de testigo de Jehová, realmente cualquier estilo le va bien, los estilos se ajustan a ella, no al revés. <br><br> En esta ocasión, un 14 de enero del 2023, decidí confesarle mis inteciones, que iba por ella por todo, el sentimiento fue correspondido.</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/MachadoFlores.jpeg' ">A pesar de que ambos ya conocíamos nuestras intenciones, algo dentro de mi seguía sintiendo nervios al hablar con ella, no me sentía con la seguridad, con la confianza, con el permiso de poder tocarla, abrazarla, tomarle la mano, besarla. <br><br> No fue hasta este día, en el que por primera vez la besé, y a partir de ahí, me seguía costando, pero esa desconfianza se fue desvaneciendo poco a poco.</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Cargada.jpeg' ">Efectivamente, cada vez fui perdiendo ese miedo, mientras que la seguridad, confianza y permiso fueron incrementando progresivamente, era un crecimiento inversamente proporcional, tan así que ya tengo la confianza de cargarla, tomarla de la cintura, besarle la mano, besarla, tomar su pierna, acomodar su cabello... <br><br>... Decir chistes tontos, decirle cumplidos bobos, ser cursi, ser labioso, tierno, todo, me siento yo mismo al estar cno ella.</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Levantado.jpeg' ">Nuestro vínculo, nuestra relación, nuestros sentimientos se fortalecian diariamente, cada vez el compromiso se hacía más grande, cada vez se necesitaba más y más responsabilidad afectiva. Admito que tenía un poco de miedo, sin embargo, me dejé y me he dejado llevar sin importar el temor, siento que vale y valdría totalmente la pena. <br><br> A partir de ese día, dejé de formar un compromiso únicamente con Andrea, ahora tocaba también brindarle compromiso y respeto a su familia.</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Triste.jpeg' ">Estuve a punto de llegar a pensar que nunca tendríamos alguna diferencia, realmente no me imagino para nada una discusión, una pelea, un difiero entre Andrea y yo, solamente hemos cruzado por malentendidos que me hacen saber que no todo es perfecto, que somos dos jóvenes intentando querer el uno del otro. <br><br> Estoy seguro que nos enfrentaremos con obstáculos, pero sé que seremos ambos contra el el obstáculo y no el uno contra el otro.</p>
+
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Acaxee.jpeg' ">Tantos momentos por vivir juntos...</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/14Feb.jpeg' ">Tantas actividades por realizar juntos...</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Cartas.jpeg' ">Tantas cosas por conocer juntos...</p>
+        <p *ngIf="activeDiv == 'http://localhost:4200/assets/Images/Andreita/Novios.jpeg' ">...Me hacen concluir que estoy completamente enamorado de ti, Perla Andrea Rodríguez Ortíz. <br>...Me hacen concluir que quiero formalizar una relación amorosa oficialmente contigo. <br>...Me hacen querer compartir mi tiempo, mis emociones, mis pensamientos, mi vida contigo. <br> <br>El día 17 de Marzo del 2024, se me concedió un deseo divino, hemos forjado un pequeño mundo que solo nosotros conocemos, nos corresponde seguir formandolo, te quiero demasiado, flaquis. </p>
+    </div>
+
+</div>
+
+
